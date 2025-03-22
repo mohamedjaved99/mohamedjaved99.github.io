@@ -1,6 +1,5 @@
-// This is a simple JavaScript file. You can add functionality here if needed.
 document.addEventListener("DOMContentLoaded", function() {
-    // Example: Scroll smoothly to sections
+    // Smooth scrolling to sections
     const links = document.querySelectorAll("a[href^='#']");
     links.forEach(link => {
         link.addEventListener("click", function(e) {
@@ -12,5 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 behavior: "smooth"
             });
         });
+    });
+
+    // Dark mode toggle
+    document.getElementById('theme-toggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
     });
 });
