@@ -1,80 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Portfolio of Kishor Patil, a Full Stack Developer with expertise in modern web technologies.">
+    <meta name="keywords"
+        content="Kishor Patil, Full Stack Developer, Portfolio, Web Development, JavaScript, Python, Node.js, React">
+    <meta name="author" content="Kishor Patil">
+    <link rel="canonical" href="https://kishor-patil97.github.io/">
+    <title>Kishor Patil - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Introduction Section -->
-    <section id="home" class="intro">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hi, I'm [Your Name]. I’m a Full Stack Developer with a passion for coding.</p>
+    <header>
+        <div class="profile">
+            <img src="images/Master of Science (M.S) Graduate Degree Holder - Kishor Sanjay Patil.JPG"
+                alt="Kishor Patil - Full Stack Developer">
+            <h1>Kishor Sanjay Patil</h1>
+            <h3>Full Stack Developer</h3>
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/kishor-patil97" target="_blank" class="btn btn-linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn Page
+                </a>
+                <a href="https://github.com/Kishor-Patil97" target="_blank" class="btn btn-github">
+                    <i class="fab fa-github"></i> GitHub Profile
+                </a>
+                <a href="https://www.xing.com/profile/Kishor_Patil069993" target="_blank" class="btn btn-xing">
+                    <i class="fab fa-github"></i> Xing Page
+                </a>
+            </div>
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>HTML/CSS</li>
-                <li>MongoDB</li>
-                <li>Git</li>
+        <nav class="navbar">
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1. <a href="project1-link">View Project</a></p>
+        
+            <!-- Dark Mode Toggle Button -->
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hello! I'm <strong>Kishor Patil</strong>, a passionate <strong>Full Stack Developer</strong> with
+                        a
+                        Master's degree in Applied Computer Science. My expertise lies in creating dynamic and
+                        user-friendly
+                        applications that bridge the gap between functionality and design.</p>
+                    <p>With hands-on experience in cutting-edge technologies and a problem-solving mindset, I aim to
+                        deliver
+                        innovative solutions tailored to modern challenges.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2. <a href="project2-link">View Project</a></p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <p>Java, JavaScript, Python, HTML, CSS, C++, SAP ABAP</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-cogs"></i> Frameworks</h3>
+                    <p>Node.js, Angular, Express, NiceGUI, Vue.js</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-cubes"></i> Libraries</h3>
+                    <p>React, Tailwind CSS, Bootstrap</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <p>MongoDB, Neo4J, Redis, MySQL, SAP HANA</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <p>Visual Studio Code, Git, GitHub, GitLab, Figma</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-cloud"></i> Cloud Computing</h3>
+                    <p>AWS, GCP</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-plug"></i> API</h3>
+                    <p>Postman, Swagger, JSON</p>
+                </div>
+                <div class="skill-card">
+                    <h3><i class="fas fa-network-wired"></i> DevOps</h3>
+                    <p>Docker, Kubernetes, CI/CD, Nginx, Linux, Windows</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="education-container">
+                <div class="education-card">
+                    <h3>Master’s of Science (M.Sc.)</h3>
+                    <p>Applied Computer Science</p>
+                    <p><strong>Institution:</strong> SRH Hochschule Heidelberg, Heidelberg, Germany</p>
+                    <p><strong>Duration:</strong> October 2022 - September 2024</p>
+                </div>
+                <div class="education-card">
+                    <h3>Bachelor of Engineering (B.E.)</h3>
+                    <p>Computer Engineering</p>
+                    <p><strong>Institution:</strong> University of Mumbai, Mumbai, India</p>
+                    <p><strong>Duration:</strong> 2015 - 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <!-- Frontend Developer -->
+                <div class="timeline-card">
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <p><strong>NEOX NETWORKS GmbH, Langen, Germany 🇩🇪</strong></p>
+                        <p><strong>Duration:</strong> February 2024 - October 2024</p>
+                        <ul>
+                            <li>Designed and developed the GUI for the PacketWolf product using Python, NiceGUI, JSON, Tailwind
+                                CSS, and Vue.js.</li>
+                            <li>Resolved 85% of reported issues during testing, contributing to the product's successful first
+                                release.</li>
+                            <li>Authored user guide documentation, reducing onboarding time by 30% and boosting sales by 65%.
+                            </li>
+                            <li>Managed production deployment, incorporating feedback from clients and end users.</li>
+                        </ul>
+                        <a href="https://www.neox-networks.com/" target="_blank" class="company-link">Visit NEOX NETWORKS
+                            GmbH</a>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+        
+                <!-- System Administrator -->
+                <div class="timeline-card">
+                    <div class="timeline-content">
+                        <h3>System Administrator</h3>
+                        <p><strong>Inspiroz IT Services Pvt. Ltd.,Mumbai, India 🇮🇳</strong></p>
+                        <p><strong>Duration:</strong> June 2020 - November 2022</p>
+                        <ul>
+                            <li>Led Azure data migration, reducing downtime by 40%.</li>
+                            <li>Managed Windows and Linux servers with Meraki (CISCO) for efficient network administration.</li>
+                            <li>Oversaw teams managing CrowdStrike, Backup Solutions, O365, and G Suite.</li>
+                            <li>Orchestrated project lifecycles and acted as Assistant Shift Lead.</li>
+                        </ul>
+                        <a href="https://inspiroz.com/" target="_blank" class="company-link">Visit Inspiroz IT Services</a>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                </div>
+        
+                <!-- Java Intern -->
+                <div class="timeline-card">
+                    <div class="timeline-content">
+                        <h3>Java Intern</h3>
+                        <p><strong>Trivia Software, Mumbai, India 🇮🇳</strong></p>
+                        <p><strong>Duration:</strong> December 2017 - January 2018</p>
+                        <ul>
+                            <li>Gained hands-on experience in Java development and debugging processes.</li>
+                            <li>Collaborated with the team to develop small-scale application modules.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <!-- SimplifySign (Master Thesis Project) -->
+                <div class="project-card">
+                    <h3>SimplifySign</h3>
+                    <p><strong>Master Thesis Project</strong></p>
+                    <p>SimplifySign is a web-based application designed to simplify the process of creating and managing digital
+                        signatures. It leverages modern web technologies to provide a seamless user experience.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Kishor-Patil97/SimplifySign" target="_blank" class="btn btn-github">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- 9Lives (Frontend + Backend) -->
+                <div class="project-card">
+                    <h3>9Lives</h3>
+                    <p>A full-stack web application for managing and tracking pet adoption processes. Built with React
+                        (frontend) and Node.js (backend).</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Kishor-Patil97/SAD-Project-9lives-frontend" target="_blank"
+                            class="btn btn-github">
+                            <i class="fab fa-github"></i> Frontend
+                        </a>
+                        <a href="https://github.com/Kishor-Patil97/SAD-Project-9lives-backend" target="_blank"
+                            class="btn btn-github">
+                            <i class="fab fa-github"></i> Backend
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Lecture Management System -->
+                <div class="project-card">
+                    <h3>Lecture Management System</h3>
+                    <p>A system designed to manage lectures, schedules, and student attendance for educational institutions.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Kishor-Patil97/Lecture_Management_System" target="_blank"
+                            class="btn btn-github">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Expense Tracker -->
+                <div class="project-card">
+                    <h3>Expense Tracker</h3>
+                    <p>A web application to track personal expenses and manage budgets effectively.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Kishor-Patil97/Expense-Tracker-Project" target="_blank"
+                            class="btn btn-github">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Netflix Clone -->
+                <div class="project-card">
+                    <h3>Netflix Clone</h3>
+                    <p>A clone of the Netflix website built using HTML, CSS, and JavaScript.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Kishor-Patil97/Netflix" target="_blank" class="btn btn-github">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Easy Track -->
+                <div class="project-card">
+                    <h3>Easy Track</h3>
+                    <p>A task management application built using React.js and JSON for data storage.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Kishor-Patil97/Easy-Track-using-React-JS-and-JSON" target="_blank"
+                            class="btn btn-github">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Portfolio Website -->
+                <!-- <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal portfolio website built using HTML, CSS, and JavaScript to showcase my skills, projects, and
+                        experience.</p>
+                    <div class="project-buttons">
+                        <a href="https://github.com/Kishor-Patil97/Kishor-Patil97.github.io" target="_blank"
+                            class="btn btn-github">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="documents" class="section">
+            <h2>Documents</h2>
+            <div class="documents-container">
+                <!-- CV -->
+                <div class="document-card">
+                    <img src="images/CV - Kishor Patil.png" alt="CV Thumbnail" class="document-thumbnail">
+                    <h3>Curriculum Vitae</h3>
+                    <div class="document-buttons">
+                        <a href="documents/CV - Kishor Patil.pdf" target="_blank" class="btn btn-view">View</a>
+                        <a href="mailto:kishor.p97@gmail.com?subject=Request%20to%20Download%20CV&body=Hi%20Kishor,%0A%0AI%20would%20like%20to%20request%20access%20to%20download%20your%20CV.%0A%0AThank you!"
+                            class="btn btn-request">Request Download</a>
+                    </div>
+                </div>
+        
+                <!-- Master Degree Certificate -->
+                <div class="document-card">
+                    <img src="images/Master Degree Certificate - Kishor Sanjay Patil.jpeg" alt="Master Degree Thumbnail"
+                        class="document-thumbnail">
+                    <h3>Master’s Degree Certificate</h3>
+                    <div class="document-buttons">
+                        <a href="documents/Master Degree Certificate - Kishor Sanjay Patil.pdf" target="_blank"
+                            class="btn btn-view">View</a>
+                        <a href="mailto:kishor.p97@gmail.com?subject=Request%20to%20Download%20Master%20Degree%20Certificate&body=Hi%20Kishor,%0A%0AI%20would%20like%20to%20request%20access%20to%20download%20your%20Master%20Degree%20Certificate.%0A%0AThank you!"
+                            class="btn btn-request">Request Download</a>
+                    </div>
+                </div>
+        
+                <!-- Recommendation Letter -->
+                <div class="document-card">
+                    <img src="images/Recommendation Letter from Neox Networks GmbH.JPG" alt="Recommendation Letter Thumbnail"
+                        class="document-thumbnail">
+                    <h3>Recommendation Letter</h3>
+                    <div class="document-buttons">
+                        <a href="documents/Recommendation Letter from Neox Networks GmbH.pdf" target="_blank"
+                            class="btn btn-view">View</a>
+                        <a href="mailto:kishor.p97@gmail.com?subject=Request%20to%20Download%20Recommendation%20Letter&body=Hi%20Kishor,%0A%0AI%20would%20like%20to%20request%20access%20to%20download%20your%20Recommendation%20Letter.%0A%0AThank you!"
+                            class="btn btn-request">Request Download</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
             <h2>Contact Me</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Mohamed Javed" required>
-                <input type="email" name="email" placeholder="mohamedjaved0205@gmail.com" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email:</p>
+                    <a href="mailto:kishor.p97@gmail.com">kishor.p97@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone:</p>
+                    <span>+49 1575 4248188</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Address:</p>
+                    <span>Mannheim, Germany</span>
+                </div>
+            </div>
+        </section>
 
+        <!-- Scroll to Top Button -->
+        <button id="scroll-to-top" class="scroll-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Loading Animation -->
+        <div id="loading">
+            <div class="loader"></div>
+        </div>
+        
+    </main>
+    
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Mohamed Javed. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2024 Kishor Patil</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
+
 </html>
