@@ -3,57 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Javed - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script>
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mohamed Javed</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle">Dark Mode</button></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate Full Stack Developer skilled in React, Node.js, and modern web technologies.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
+    <!-- Navigation Bar -->
+    <nav>
         <ul>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>Python</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>E-Learning Website</h3>
-            <p>A platform for online courses with accessibility features.</p>
-            <a href="#">View Project</a>
+    <!-- Introduction Section -->
+    <section id="home" class="intro">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm [Your Name]. I’m a Full Stack Developer with a passion for coding.</p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: mohamedjavedmohamedariff@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/mohamedjaved99" target="_blank">mohamedjaved99</a></p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>HTML/CSS</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1. <a href="project1-link">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2. <a href="project2-link">View Project</a></p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Mohamed Javed" required>
+                <input type="email" name="email" placeholder="mohamedjaved0205@gmail.com" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 Mohamed Javed. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Mohamed Javed. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
