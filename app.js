@@ -1,20 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scrolling to sections
-    const links = document.querySelectorAll("a[href^='#']");
-    links.forEach(link => {
-        link.addEventListener("click", function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: "smooth"
-            });
-        });
-    });
+// Smooth scroll for the navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
 
-    // Dark mode toggle
-    document.getElementById('theme-toggle').addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
